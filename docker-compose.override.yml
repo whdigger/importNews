@@ -1,0 +1,25 @@
+version: "3"
+
+services:
+  mariadb:
+    ports:
+      - '3306:3306'
+  traefik:
+    ports:
+      - '80:80'
+  php:
+    environment:
+      PHP_SENDMAIL_PATH: /usr/sbin/sendmail -t -i -S mailhog:1025
+      DB_HOST: $DB_HOST
+      DB_PORT: $DB_PORT
+      DB_USER: $DB_USER
+      DB_PASSWORD: $DB_PASSWORD
+      DB_NAME: $DB_NAME
+      DB_DRIVER: $DB_DRIVER
+      PHP_FPM_USER: wodby
+      PHP_FPM_GROUP: wodby
+      COLUMNS: 80
+      PHP_XDEBUG: 1
+      PHP_XDEBUG_DEFAULT_ENABLE: 1
+volumes:
+  codebase:

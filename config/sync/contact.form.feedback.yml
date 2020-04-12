@@ -1,0 +1,14 @@
+uuid: f01cf24f-e468-4c14-906b-dd50a77fadbb
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vymHlgJy26BuI5GGj9-IXjwR3dRC5C0tij4BpWJnoqw
+id: feedback
+label: 'Обратная связь с сайтом'
+recipients:
+  - example@example.com
+reply: ''
+weight: 0
+message: 'Ваше сообщение отправлено.'
+redirect: ''

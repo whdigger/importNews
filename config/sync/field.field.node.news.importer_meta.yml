@@ -1,0 +1,23 @@
+uuid: ef3c8daa-6f90-4f41-bd45-cbd0b5575cce
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.importer_meta
+    - node.type.news
+  module:
+    - import
+id: node.news.importer_meta
+field_name: importer_meta
+entity_type: node
+bundle: news
+label: 'Import meta'
+description: 'Metadate for import module'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:importer'
+  handler_settings: {  }
+field_type: importer_meta

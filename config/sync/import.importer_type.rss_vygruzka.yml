@@ -1,0 +1,13 @@
+uuid: 5f0fe50a-104e-46c4-9129-20cdcd4bf48c
+langcode: ru
+status: true
+dependencies: {  }
+id: rss_vygruzka
+label: 'Rss выгрузка'
+entityTypeMaterial: news
+primaryKey: guid
+mappings:
+  title: title
+  body: content
+  field_image: contentFirstImage
+  field_url: link

@@ -1,0 +1,20 @@
+uuid: 12662ced-f3d2-4ab2-bb25-7c62c8f665b1
+langcode: ru
+status: true
+dependencies:
+  module:
+    - import
+    - node
+id: node.importer_meta
+field_name: importer_meta
+entity_type: node
+type: importer_meta
+settings:
+  target_type: importer
+module: import
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
